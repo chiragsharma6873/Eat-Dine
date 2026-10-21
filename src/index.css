@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme{
+    --font-sans: "Geist", sans-serif;
+    --font-urbanist: "Urbanist", sans-serif;
+}
+
+@layer base {
+    body {
+        @apply bg-white text-black text-sm;
+    }
+}
+
+@utility px-auto {
+    @apply px-6 md:px-12 lg:px-24 xl:px-40;
+}
+
+
+body {
+  cursor: none;
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  margin-left: -4px;
+  margin-top: -4px;
+}
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  margin-left: -17.5px;
+  margin-top: -17.5px;
+}
